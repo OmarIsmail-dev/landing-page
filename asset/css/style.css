@@ -1,0 +1,172 @@
+*{
+
+    scroll-behavior: smooth;
+
+}
+
+nav{
+    background: rgba(0, 150, 136, .7);
+    z-index: 1000;
+}
+
+.sec {
+  position: relative;   
+  background-image: url("../image/0921306.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 80, 80, 0.65);
+  z-index: 1;
+}
+
+.content {
+  position: relative;  
+  z-index: 2;        
+  margin-top: 100px;
+ padding-top: 80px;
+
+}
+
+.content {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Extra small (xs) <576px: عرض 100% (ده الافتراضي) */
+@media (min-width: 576px) {
+  .content {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content {
+    max-width: 1320px;
+  }
+}
+
+
+.text {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link{
+    color: rgba(236, 240, 241, 0.95) !important;
+    border-radius: 10px;
+
+}
+
+.nav-link:hover {
+background: white;
+color: rgb(4 9 30) !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.632);
+
+}
+
+.title-logo{
+    text-decoration: none  !important;
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.section-title h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h1::after { 
+    content: '';
+    position: absolute;
+    bottom: -30px;  
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 120px;
+    height: 4px;
+    background: rgba(231, 76, 60, 0.9);
+    border-radius: 2px;
+}
+
+.header-navbar{    
+    position: relative;
+    display: inline-block;
+}
+
+.header-navbar h3::after { 
+    content: '';
+    position: absolute;
+    bottom: -30px;  
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 120px;
+    height: 4px;
+    background: rgba(231, 76, 60, 0.9);
+    border-radius: 2px;
+}
+
+img.card-img-top {
+    height: 200px;
+}
+
+
+.footer-link {
+  display: inline-block;   
+    transition:all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footer-link:hover{
+color: rgba(243, 156, 18, 0.9)  !important;
+transform: translateX(5px) !important;
+
+
+}
+
+.icon-link {
+  display: inline-block;   
+    transition:all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   background: rgba(255, 255, 255, 0.1);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link:hover{
+background:rgba(231, 76, 60, 0.9) !important;
+transform: translateY(-5px) !important;
+}
