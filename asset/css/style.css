@@ -169,4 +169,24 @@ transform: translateX(5px) !important;
 .icon-link:hover{
 background:rgba(231, 76, 60, 0.9) !important;
 transform: translateY(-5px) !important;
+}                  
+@media (max-width: 410px) {
+
+.title-logo{
+  font-size: 1rem !important;
+}  
+
+
+.logo{
+  margin-right: 0 !important;
+}
+
+}
+
+
+@media (max-width: 350px) {
+
+.title-logo{
+  font-size: 0.75rem !important;
+}
 }
